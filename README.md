@@ -55,7 +55,7 @@
 
 - [참고 사이트](https://newwisdom.tistory.com/89)
 
-- **_properties (속성 파일)_**
+- **_properties (속성 파일)_** 
 
   - 기본적으로 Spring Boot는 key-value 형식을 사용 하는 *application.properties* 파일에 설정된 구성에 액세스 할 수 있다. 
 
@@ -261,15 +261,15 @@
 
 <img src="images/oauth구조.png">
 
-1. **_사용자( Owner )_**가 client 와 연결된다.
+1. **_사용자( Owner )_** 가 client 와 연결된다.
    - client는 내가 개발하는 web, app 이다. 
-2. 플랫폼 로그인 진행시 **_Client_**의 화면에서 사용자에게 Resorce Server 로 요청하기 위한 **계정 동의**를 구한다. -> 동의 버튼은 **_Resorce Server_**로 연결되어 있어 바로 3번이 진행된다. 
+2. 플랫폼 로그인 진행시 **_Client_** 의 화면에서 사용자에게 Resorce Server 로 요청하기 위한 **계정 동의** 를 구한다. -> 동의 버튼은 **_Resorce Server_** 로 연결되어 있어 바로 3번이 진행된다. 
    - Resorce Server 는 신뢰할 수 있는 기업인 google, naver, Kakao 같은 server 를 뜻한다. 
    - 계정 동의는 해당 플랫폼의 id, password로 로그인하는것을 뜻한다. 
 3. 동의를 구하면 Resorce Server 로 계정 인증 내용을 보낸다. 
-4. Resorce Server 가 인증요청을 받고 **_Client에서 필요로 하는 정보 ( Scope List )_ **가 무엇인지 사용자에게 보여준다. 사용할 정보 리스트( Scope List ) 를 가지고 Client가 이용할 수 있도록 허락하는지 사용자에게 물어본다. 
+4. Resorce Server 가 인증요청을 받고 **_Client에서 필요로 하는 정보 ( Scope List )_ ** 가 무엇인지 사용자에게 보여준다. 사용할 정보 리스트( Scope List ) 를 가지고 Client가 이용할 수 있도록 허락하는지 사용자에게 물어본다. 
    - scope List 의 내용을 사용자가 허락할 것인지 창으로 보여준다. 
-5. 이때 동의 버튼을 클릭하면  Resorce Server 가 Client에게 사용자의 정보 ( Scope List ) 를 볼 수 있도록 허락하는  **_비밀번호 ( Code )_**를 보낸다. 
+5. 이때 동의 버튼을 클릭하면  Resorce Server 가 Client에게 사용자의 정보 ( Scope List ) 를 볼 수 있도록 허락하는  **_비밀번호 ( Code )_** 를 보낸다. 
    - 따라서 Code에는 사용자가 자신의 정보를 볼 수 있도록 Client에게 권한을 줬다는 것을 뜻한다. 
 6. Client가 Resorce Server 로부터 받은 Code를 **_Client id, Client secretKey_** 와 함께 묶어 다시 Resorce Server 로 보낸다. 
    - Resorce Server 는 전달받은 3가지의 정보 ( Code와 해당 클라이언트 id. SecretKey) 가 맞는지 판단한다.
