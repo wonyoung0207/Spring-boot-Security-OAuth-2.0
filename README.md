@@ -15,7 +15,7 @@
 4. [참고 유튜브 강의](https://www.youtube.com/watch?v=9ui2i-SgBpk)
 5. [내용 참고 ](https://deeplify.dev/back-end/spring/oauth2-social-login)
 
-
+---
 
 ## 구현시 사용된 용어 및 개념
 
@@ -254,7 +254,7 @@
   }
   ```
 
-
+---
 
 
 ## Spring boot Security 구조
@@ -516,13 +516,13 @@ spring.security.oauth2.client.provider.naver.user-name-attribute= response
    </dependency>
    ```
 
-
+---
 
 ## 파일 구조
 
 <img src="images/springOAuth2.0파일구조.png">
 
-
+---
 
 ## Spring boot Security 진행 순서 
 
@@ -576,7 +576,7 @@ spring.security.oauth2.client.provider.naver.user-name-attribute= response
 
 13. 토큰이 만료된 경우, 쿠키에 저장된 리프레시 토큰을 이용하여 엑세스 토큰과 리프레시 토큰을 재발급
 
-
+---
 
 ## Spring boot Security 코드 진행 순서  
 
@@ -812,7 +812,8 @@ spring.security.oauth2.client.provider.naver.user-name-attribute= response
      }
      ```
 
-     
+
+---
 
 ## 에러
 
