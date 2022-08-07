@@ -580,7 +580,7 @@ spring.security.oauth2.client.provider.naver.user-name-attribute= response
 
 ## Spring boot Security 코드 진행 순서  
 
-> [코드 저장되어 있는 깃허브 ](https://github.com/wonyoung0207/Spring-boot-Security-OAuth-2.0-/tree/master/OAuthSecurity)
+> [코드 저장되어 있는 깃허브 ](https://github.com/wonyoung0207/Spring-boot-Security-OAuth-2.0/tree/master/OAuthSecurity)
 >
 > google OAuth 를 예시로 사용 
 >
