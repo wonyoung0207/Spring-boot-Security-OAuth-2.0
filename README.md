@@ -277,7 +277,7 @@
    - Access Token을 가지고 Client는 해당 사용자가 허락한 범위 내에서 정보를 열람할 수있다. 
 8. Client 는 Access Token을 가지고 API를 사용할 수 있다. 
 
-
+---
 
 ## Spring boot OAuth 2.0 환경설정
 
@@ -580,7 +580,7 @@ spring.security.oauth2.client.provider.naver.user-name-attribute= response
 
 ## Spring boot Security 코드 진행 순서  
 
-> [코드 저장되어 있는 깃허브 ]()
+> [코드 저장되어 있는 깃허브 ](https://github.com/wonyoung0207/Spring-boot-Security-OAuth-2.0-/tree/master/OAuthSecurity)
 >
 > google OAuth 를 예시로 사용 
 >
